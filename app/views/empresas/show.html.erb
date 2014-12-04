@@ -1,0 +1,8 @@
+<h2><%= @empresa.nome %></h2>
+<p><%= @empresa.descricao%>
+<p><%= @empresa.cidade %>
+
+<p>
+	<%= link_to 'editar', edit_empresa_path %> |
+	<%= link_to 'voltar', empresas_path %>
+</p>
