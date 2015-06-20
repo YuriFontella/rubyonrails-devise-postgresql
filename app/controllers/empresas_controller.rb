@@ -53,6 +53,11 @@ class EmpresasController < ApplicationController
 		redirect_to empresas_path
 	end
   
+  def produtos
+    @empresa = Empresa.find(params[:id])
+    @produtos = @empresa.produto
+  end
+  
   private 
   def empresas_params
     params.require(:empresa).permit(:nome, :descricao, :cidade)

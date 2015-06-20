@@ -1,0 +1,7 @@
+<h1><%= @empresa.nome %></h1>
+
+<% @produtos.each do |produto| %>
+<p><%= produto.nome %></p>
+<% end %>
+
+<p><%= link_to 'voltar', empresas_path %></p>
